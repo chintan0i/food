@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="foodecafe.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <title>Food Cafe</title>
+    </head>
+    <body>
+    <div class="logg" id="logino">
+        <i onclick="closelogin()" class="fa-solid fa-circle-xmark" style="float: inline-end; color: #2690BF; font-size: 25px; margin-right: 10px; margin-top: 10px; cursor: pointer;"></i>
+        <h2 class="headlog" id="clog">LOGIN</h2>
+        <form onsubmit="return sidemail()">
+            <fieldset style="border: none;">
+                <div class="sidelogin">
+                    <div id="mail"><input type="text" placeholder="Email" id="em" class="txt">
+                    <p id="mailerr"></p></div>
+                    <div><input type="password" placeholder="Password"  class="txt" id="pas">
+                    <p id="paser"></p></div><br></br>
+                    <div><input type="submit" class="sub"></div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+        <div class="main" id="main">
+            <div class="top">
+                <div class="toplist">
+                    <div class="topright">
+                        <span style="margin-top: 8px; margin-right: 10px;">Follow on:</span>
+                        <li class="right"><i class="fa-brands fa-facebook-f"></i></li>
+                        <li class="right"><i class="fa-brands fa-x-twitter"></i></li>
+                        <li class="right"><i class="fa-brands fa-instagram"></i></li>
+                    </div>
+                    <div class="topcenter"><h2>FOOD CAFE</h2></div>
+                    <div class="topleft">
+                        <div class="sideleft"><i class="fa-solid fa-earth-americas"></i><select name="Language" id="lan" class="langu">
+                            <option value="English">English</option>
+                            <option value="Italian">Italian</option>
+                            <option value="France">France</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="Poland">Poland</option>
+                            <option value="German">German</option>
+                        </select></div>
+                        <div class="sideleft" onclick="pagelogin()">LOGIN</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <li class="home" onclick="dropdown()">Home
+                    <ul class="dropdown" id="openh">
+                        <li class="liss">Home 1</li>
+                        <li class="liss">Home 2</li>
+                        <li class="liss">Home 3</li>
+                    </ul>
+                </li>
+                <li class="home" onclick="dropdownus()">About Us
+                    <ul class="dropdown" id="openus">
+                        <li class="liss">About Us</li>
+                        <li class="liss">History</li>
+                    </ul>
+                </li>
+                <li class="home" onclick="dds()">Services
+                    <ul class="dropdown" id="opens">
+                        <li class="liss">Services 1</li>
+                        <li class="liss">Services 2</li>
+                        <li class="liss">Services 3</li>
+                        <li class="liss">Services 4</li>
+                        <li class="liss">Services 5</li>
+                    </ul>
+                </li>
+                <li class="home">Gallerys</li>
+                <li class="home">Contact Us</li>
+            </div>
+            <div class="bigimg">
+                <div class="chngimg">
+                    <img src="cafe.jpg" alt="" id="i1" style="display: block;">
+                    <img src="cafelooks.jpg" alt="" id="i2">
+                    <img src="cafe outside.jpg" alt="" id="i3">
+                    <img src="interior cafe.jpg" alt="" id="i4">
+                </div>
+                <button id="prev" onclick="prev()">&lt;</button>
+                <button id="next" onclick="next()" class="btn">&gt;</button>
+            </div>
+            <div class="slide" style="padding: 100px 0px; background: #f7f7f7;">
+                <div class="picchng">
+                    <button class="button" onclick="showimg()">Home</button>
+                    <button class="button" onclick="showimg2()">Service</button>
+                    <button class="button" onclick="showimg3()">Contact</button>
+                </div>
+                <div class="pics">
+                    <img class="tree" src="tree.jpg" alt="" id="tr" style="display: block;">
+                    <img class="river" src="river.jpg" alt="" id="ri">
+                    <img class="many" src="many.jpg" alt="" id="ma">
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menbut">
+                    <div>
+                        <div class="menubtn">
+                            <button class="ff" onclick="coff()">Coffee</button>
+                            <button class="ff" onclick="colddrink()">Cold Drink</button>
+                            <button class="ff" onclick="fastfo()">Fastfood</button>
+                            <button class="ff" onclick="te()">Tea</button>
+                            <button class="ff" onclick="showall()">All</button>
+                        </div>
+                        <div class="menupics" style="display: flex; flex-flow: wrap;">
+                            <div class="coffee" id="cf" style="display: flex;">
+                                <div>
+                                    <img src="cappuccino.jpg" alt="">
+                                    <h4>Cappuccino</h4>
+                                </div>
+                                <div>
+                                    <img src="espresso.jpg" alt="">
+                                    <h4>Espresso</h4>
+                                </div>
+                                <div>
+                                    <img src="cafe latte.jpg" alt="">
+                                    <h4>Cafe Latte</h4>
+                                </div>
+                                <div>
+                                    <img src="cold brew.jpg" alt="">
+                                    <h4>Cold Brew</h4>
+                                </div>
+                            </div>
+                            <div class="colddrink" id="cd">
+                                <div>
+                                    <img src="sprite.jpg" alt="">
+                                    <h4>Sprite</h4>
+                                </div>
+                                <div>
+                                    <img src="coco cola.jpg" alt="">
+                                    <h4>Coca Cola</h4>
+                                </div>
+                                <div>
+                                    <img src="thumbs up.jpg" alt="">
+                                    <h4>Thumbs Up</h4>
+                                </div>
+                                <div>
+                                    <img src="mirinda.jpg" alt="">
+                                    <h4>Mirinda</h4>
+                                </div>
+                            </div>
+                            <div class="fast" id="fafo">
+                                <div>
+                                    <img src="burger.jpg" alt="">
+                                    <h4>Burger</h4>
+                                </div>
+                                <div>
+                                    <img src="Vada Pav.jpg" alt="">
+                                    <h4>Vada Pav</h4>
+                                </div>
+                                <div>
+                                    <img src="Pizza.jpg" alt="">
+                                    <h4>Pizza</h4>
+                                </div>
+                                <div>
+                                    <img src="Tacos.jpg" alt="">
+                                    <h4>Tacos</h4>
+                                </div>
+                            </div>
+                            <div class="tea" id="te">
+                                <div>
+                                    <img src="Black Tea.jpg" alt="">
+                                    <h4>Black Tea</h4>
+                                </div>
+                                <div>
+                                    <img src="Green Tea.jpg" alt="">
+                                    <h4>Green Tea</h4>
+                                </div>
+                                <div>
+                                    <img src="Herbal TEa.webp" alt="">
+                                    <h4>Herbal Tea</h4>
+                                </div>
+                                <div>
+                                    <img src="Oolang Tea.jpg" alt="">
+                                    <h4>Oolang Tea</h4>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blurimg">
+                <div class="gettouch">
+                    <h3>GET IN TOUCH</h3>
+                    <form class="formto">
+                        <fieldset>
+                            <div class="foma">
+                                <div class="sca">
+                                    <div><input type="text" placeholder="Name" class="sc" id="name" onkeyup="nameerr()">
+                                    <p id="naerr"></p></div>
+                                    <div><input type="text" placeholder="Email"  class="sc" id="ema" onkeyup="return msgerror()">
+                                    <p id="merr"></p></div>
+                                </div><br></br>
+                                <div><input type="password" placeholder="Password" class="dc" id="ps" style="width: 522px;" onkeyup="return psserr()">
+                                <p id="pserr"></p></div><br></br>
+                                <div><input type="text" placeholder="Your Message" class="dc" id="msg" style="width: 522px; height: 180px;" onkeyup="return meser()">
+                                <p id="msgerr"></p></div><br></br>
+                                <div><input type="submit" class="subm" onclick="return validateForm()">
+                                <p id="alertp"></p></div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+    
+    <script src="foddcafe.js"></script>
+</body>
+</html>

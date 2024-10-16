@@ -1,0 +1,437 @@
+body{
+    margin: 0;
+    /* height: 50000px; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main{
+    margin: 0;
+    /* display: flex; */
+    /* align-items: center; */
+    /* text-align: center; */
+    position: relative;
+    z-index: 2;
+}
+
+.toplist{
+    height: 75px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    gap: 350px;
+    background-color: #2690BF;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.topright{
+    display: flex;
+    list-style: none;
+    /* gap: 15px; */
+    text-align: center;
+    margin: 50px;
+}
+.topleft{
+    display: flex;
+    gap: 0px;
+}
+.topcenter{
+    font-size: 25px;
+}
+.bottom{
+    display: flex;
+    list-style: none;
+    padding: auto;
+    margin: 10px 545px;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.right{
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: unset;
+    border-bottom: unset;
+    padding: 8px 20.5px;
+    
+}
+.fa-solid fa-chevron-down{
+    font-size: small;
+}
+.dropdown{
+    display: none;
+    background-color: white;
+    list-style: none;
+    position: fixed;
+    border-top: solid #2690BF;
+    border-radius: 5px;
+    width: 120px;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+}
+.home{
+    display: block;
+    /* border-top: solid #2690BF;
+    border-radius: 5px; */
+}
+.langu{
+    background-color: #2690BF;
+    color: white;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    /* display:flex; */
+
+}
+.sideleft{
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: unset;
+    border-bottom: unset;
+    border-right: unset;
+    padding: 5px 20.5px;
+    cursor: pointer;
+}
+.liss{
+    margin: 10px;
+    background-color: white;
+    color: #000;
+}
+.liss:hover{
+    background: white;
+    color: #DEB887;
+    margin: 15px;
+}
+.home:hover{
+    color: #DEB887;
+}
+.right:hover{
+    background-color: #DEB887;
+}
+.logg{
+    width: 400px;
+    height: 100%;
+    float:inline-end;
+    position: absolute;
+    display: none;
+    right: 0;
+    transform: translate(400) 2s;
+    z-index: 4;
+    background-color: white;
+}
+.headlog{
+    font-size: 35px;
+    margin-left: 20px;
+}
+.sub{
+    background-color: #2690BF;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid #2690BF;
+    padding: 12px 25px; 
+    font-size: 14px; 
+    font-weight: 400;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.txt{
+    width: 80%;
+    height: 40px;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 2px solid rgba(0, 0, 0, .05);
+    margin: 10px;
+    align-items: center;
+}
+.sidelogin{
+    /* margin-right: 40px; */
+    border: none;
+}
+select option{
+    background-color: white;
+    color: #000;
+}
+.logg:hover {
+    transform: translate(0) 2s;
+    width: 400px;
+}
+
+.bigimg{
+    height: 700px;
+    width: 1320px;
+    margin: auto;
+    background-color: burlywood;
+}
+/* Button Formating */
+.picchng{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+.button{
+    background-color: #2690BF;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: 1px solid #2690BF;
+    border-radius: 3px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #2690bf2b;
+    color: #2690BF;
+    font-size: 22px;
+}
+
+.slide img{
+    display: none;
+    width: 604px;
+    height: 400px;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    vertical-align: middle;
+}
+.menbut{
+    padding: 200px;
+}
+.menubtn{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.ff{
+    background-color: #2690bf2b;
+    color: #2690BF;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #2690bf2b;
+    border-radius: 3px;
+    padding: 10px 30px;
+    border-bottom:3px solid #2690BF;
+    cursor: pointer;
+}
+.menupics{
+    display: flex;
+}
+.colddrink{
+    display: none;
+    /* display: flex; */
+    gap: 50px;
+}
+.coffee{
+    display: none;
+    /* display: flex; */
+    gap: 50px;
+}
+.colddrink div{
+    margin: 50px 0px;
+    /* display: flex; */
+    gap: 100px;
+    border-radius: 5px;
+    box-shadow: 5px #888888;
+    border: 1px solid #888888;
+    /* display: flex; */
+}
+.coffee div{
+    margin: 50px 0px;
+    /* display: flex; */
+    gap: 100px;
+    border-radius: 5px;
+    box-shadow: 5px #888888;
+    border: 1px solid #888888;
+    /* display: flex; */
+}
+.menupics img{
+    padding: 5px;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+}
+.menupics h4{
+    text-align: center;
+}
+.fast{
+    display: none;
+    /* display: flex; */
+    gap: 50px;
+}
+.fast div{
+    margin: 50px 0px;
+    /* display: flex; */
+    gap: 100px;
+    border-radius: 5px;
+    box-shadow: 5px #888888;
+    border: 1px solid #888888;
+    /* display: flex; */
+}
+.tea{
+    display: none;
+    /* display: flex; */
+    gap: 50px;
+}
+.tea div{
+    margin: 50px 0px;
+    /* display: flex; */
+    gap: 100px;
+    border-radius: 5px;
+    box-shadow: 5px #888888;
+    border: 1px solid #888888;
+    /* display: flex; */
+}
+
+.bigimg{
+    background-color: #ffffff;
+    width: 1300px;
+    height: 700px;
+    /* position: absolute; */
+    /* transform: translate(-50%,-50%);
+    /* left: 50%; */
+    /* top: 50%; */ 
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    }
+
+.chngimg{
+    height: 300px;
+    /* position: relative; */
+}
+
+.chngimg #next{
+    left: 0px;
+}
+
+.bigimg img{
+    /* position: relative; */
+    width: 100%;
+    height: 700px;
+    display: none;
+}
+.active{
+    display: block;
+}
+
+#prev,#next{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    background-color: #076bb8;
+    color: #ffffff;
+    /* margin: auto; */
+    top: 18%;
+    /* bottom: 0; */
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+}
+ 
+#prev{
+    left: 150px;
+}
+
+.btn{
+    right: 150px;
+}
+
+/* Get in touch section */
+
+.blurimg{
+    background-color: #f8f9fd;
+    background-image: url("blurfood.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.gettouch{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    padding: 40PX;
+    height: 600px;
+    width: 580px;
+    background-color: #000;
+    margin-left: 100px;
+}
+
+.gettouch h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #fff;
+    /* background-color: #000; */
+    height: 15px;
+    width: 300px;
+}
+
+.formto{
+    /* --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0; */
+    display: flex; 
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 50px;
+    border: black;
+    /* margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x)); */
+}
+
+.sca{
+    display: flex;
+    width: 50px;
+    gap: 5px;
+}
+
+.foma{
+    width: 500px;
+    font-size: 14px;
+    /* padding: 10px 20px; */
+    /* height: 52px; */
+    border: none;
+}
+
+.dc,.sc{
+    /* width: 100%; */
+    height: 40px;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    border-radius: 5px;
+    /* padding: 10px 20px; */
+    border: 2px solid rgba(0, 0, 0, .05);
+    margin: 0 10px 10px 0;
+    /* align-items:baseline; */
+}
+
+.sc{
+    width: 250px;
+}
+.dc{
+    width: 6000px;
+}
+.subm{
+    background-color: #2690BF;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid #2690BF;
+    padding: 10px 20px;
+}
+p{
+    color: red;
+}
